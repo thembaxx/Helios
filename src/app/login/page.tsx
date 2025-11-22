@@ -36,8 +36,7 @@ export default function LoginPage() {
 							By continuing, you agree to {appConfig.name}&apos;s{" "}
 							<Link className="underline" href="/">
 								Consumer Terms
-							</Link>
-							and{" "}
+							</Link>{" "}
 							<Link className="underline" href="/">
 								Usage Policy
 							</Link>
