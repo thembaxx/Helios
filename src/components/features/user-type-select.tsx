@@ -17,7 +17,7 @@ function UserTypeSelect() {
 			<div>
 				<Image
 					fill
-					src="/images/hero.png"
+					src="/images/hero3.png"
 					alt="Background"
 					className="absolute inset-0 h-full w-full object-cover"
 				/>

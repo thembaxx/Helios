@@ -17,7 +17,7 @@ export default function SocialLogin({ className }: SocialLoginProps) {
 				<Button
 					variant="outline"
 					size="sm"
-					className="w-full rounded-full h-9 gap-3"
+					className="w-full rounded-full h-9 gap-3 border-[#8d8c8c]"
 				>
 					<Icon icon="fa-brands:apple" height={18} width={18} />
 					Continue with Apple
@@ -27,7 +27,7 @@ export default function SocialLogin({ className }: SocialLoginProps) {
 				<Button
 					variant="outline"
 					size="sm"
-					className="w-full rounded-full h-9 gap-3"
+					className="w-full rounded-full h-9 gap-3 border-[#8d8c8c]"
 				>
 					<Image
 						src="/icons/google.svg"
