@@ -6,7 +6,7 @@ export default function Header() {
 		<header className="flex items-center justify-between py-4">
 			<div>
 				<p className="text-muted-foreground text-sm">Good morning,</p>
-				<h1 className="text-xl font-bold">Themba</h1>
+				<h1 className="text-lg font-bold">Themba</h1>
 			</div>
 			<Button
 				variant="outline"

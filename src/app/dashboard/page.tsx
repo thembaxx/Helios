@@ -2,6 +2,7 @@ import CategoryGrid from "@/components/features/dashboard/category-grid";
 import FeaturedServices from "@/components/features/dashboard/featured-services";
 import Header from "@/components/features/dashboard/header";
 import SearchBar from "@/components/features/dashboard/search-bar";
+import FeaturedWork from "@/components/features/dashboard/top-rated";
 import BottomNav from "@/components/layout/bottom-nav";
 
 export default function Dashboard() {
@@ -18,6 +19,7 @@ export default function Dashboard() {
 							<SearchBar />
 							<CategoryGrid />
 							<FeaturedServices />
+							<FeaturedWork />
 						</div>
 					</div>
 					<BottomNav />
