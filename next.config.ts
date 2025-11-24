@@ -9,6 +9,10 @@ const nextConfig: NextConfig = {
 				protocol: "https",
 				hostname: "images.unsplash.com",
 			},
+			{
+				protocol: "https",
+				hostname: "geospatialmedia.s3.amazonaws.com",
+			},
 		],
 	},
 };

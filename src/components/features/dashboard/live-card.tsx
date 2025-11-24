@@ -33,8 +33,8 @@ const LiveCard: React.FC<LiveCardProps> = ({ data }) => {
 						//src="https://api.mapbox.com/styles/v1/mapbox/light-v10/static/-122.4194,37.7749,12,0/600x600?access_token=YOUR_TOKEN_HERE"
 						// Fallback to a generic map-like pattern if you don't have a mapbox token,
 						// or use a solid color/image for the 'exact' look:
-						src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1000&auto=format&fit=crop"
-						className="absolute inset-0 h-full w-full object-cover opacity-80 grayscale-[0.3]"
+						src="https://geospatialmedia.s3.amazonaws.com/wp-content/uploads/2019/07/Apple-maps-app.png"
+						className="absolute top-0 left-0 inset-0 h-full w-full object-cover opacity-80 grayscale-[0.3]"
 						alt="Live Map"
 						height={256}
 						width={256}
