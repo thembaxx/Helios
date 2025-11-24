@@ -47,7 +47,7 @@ export default function FeaturedServices() {
 				{FEATURED.map((item) => (
 					<div
 						key={item.id}
-						className="min-w-[240px] p-3 rounded-3xl bg-white border border-zinc-100"
+						className="min-w-60 p-3 rounded-3xl bg-white border border-zinc-100"
 					>
 						<div className="flex items-start gap-3">
 							<div className="relative h-12 w-12 rounded-full overflow-hidden bg-zinc-100 shrink-0">

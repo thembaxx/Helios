@@ -1,7 +1,6 @@
 "use client";
 
-import { ArrowLeft, Camera, Image as ImageIcon, Send } from "lucide-react";
-import { useRouter } from "next/navigation";
+import { Camera, Image as ImageIcon, Send } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -46,7 +45,6 @@ const QUICK_REPLIES = [
 ];
 
 export default function ChatInterface() {
-	const router = useRouter();
 	const [messages, setMessages] = useState<Message[]>(INITIAL_MESSAGES);
 	const [inputValue, setInputValue] = useState("");
 

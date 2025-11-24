@@ -1,6 +1,7 @@
 import CategoryGrid from "@/components/features/dashboard/category-grid";
 import FeaturedServices from "@/components/features/dashboard/featured-services";
 import Header from "@/components/features/dashboard/header";
+import LiveCard from "@/components/features/dashboard/live-card";
 import SearchBar from "@/components/features/dashboard/search-bar";
 import FeaturedWork from "@/components/features/dashboard/top-rated";
 import BottomNav from "@/components/layout/bottom-nav";
@@ -17,6 +18,7 @@ export default function Dashboard() {
 						<div className="px-6 pt-8 pb-24 flex flex-col gap-6">
 							<Header />
 							<SearchBar />
+							<LiveCard />
 							<CategoryGrid />
 							<FeaturedServices />
 							<FeaturedWork />
