@@ -2,32 +2,90 @@
 
 import { motion } from "motion/react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Field, FieldGroup, FieldLabel, FieldSet } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
 import { Spinner } from "@/components/ui/spinner";
+import { authClient } from "@/lib/auth-client";
 
 export default function SignUpForm() {
+	const [firstName, setFirstName] = useState("");
+	const [lastName, setLastName] = useState("");
+	const [email, setEmail] = useState("");
+	const [password, setPassword] = useState("");
+	const [loading, setLoading] = useState(false);
+	const router = useRouter();
+
+	const handleSignUp = async () => {
+		setLoading(true);
+		await authClient.signUp.email(
+			{
+				email,
+				password,
+				name: `${firstName} ${lastName}`,
+				callbackURL: "/dashboard", // or wherever you want to redirect
+			},
+			{
+				onRequest: () => {
+					setLoading(true);
+				},
+				onSuccess: () => {
+					setLoading(false);
+					router.push("/dashboard");
+				},
+				onError: (ctx) => {
+					setLoading(false);
+					alert(ctx.error.message);
+				},
+			},
+		);
+	};
+
 	return (
 		<div className="w-full max-w-xl mt-3">
-			<form>
+			<form
+				onSubmit={(e) => {
+					e.preventDefault();
+					handleSignUp();
+				}}
+			>
 				<FieldGroup>
 					<FieldSet>
 						<FieldGroup>
 							<div className="grid grid-cols-2 gap-3">
 								<Field>
-									<FieldLabel htmlFor="firs-name">First name</FieldLabel>
-									<Input id="firs-name" type="first name" required />
+									<FieldLabel htmlFor="first-name">First name</FieldLabel>
+									<Input
+										id="first-name"
+										type="text"
+										required
+										value={firstName}
+										onChange={(e) => setFirstName(e.target.value)}
+									/>
 								</Field>
 								<Field>
 									<FieldLabel htmlFor="last-name">Last name</FieldLabel>
-									<Input id="last-name" type="last name" required />
+									<Input
+										id="last-name"
+										type="text"
+										required
+										value={lastName}
+										onChange={(e) => setLastName(e.target.value)}
+									/>
 								</Field>
 							</div>
 							<Field>
 								<FieldLabel htmlFor="email">Email</FieldLabel>
-								<Input id="email" type="email" required />
+								<Input
+									id="email"
+									type="email"
+									required
+									value={email}
+									onChange={(e) => setEmail(e.target.value)}
+								/>
 							</Field>
 							<Field>
 								<FieldLabel htmlFor="password">Password</FieldLabel>
@@ -37,6 +95,8 @@ export default function SignUpForm() {
 									placeholder="Password (8 or more characters)"
 									type="password"
 									required
+									value={password}
+									onChange={(e) => setPassword(e.target.value)}
 								/>
 							</Field>
 						</FieldGroup>
@@ -70,8 +130,10 @@ export default function SignUpForm() {
 										variant="default"
 										size="sm"
 										className="w-full bg-[#008D00] hover:brightness-95 active:brightness-100 h-9"
+										type="submit"
+										disabled={loading}
 									>
-										<Spinner />
+										{loading && <Spinner />}
 										Create my account
 									</Button>
 								</motion.div>

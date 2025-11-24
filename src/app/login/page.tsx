@@ -9,10 +9,12 @@ export default function LoginPage() {
 	return (
 		<div className="flex flex-col gap-6 px-6 py-12 w-full h-screen overflow-hidden">
 			<header className="mb-6 flex justify-center">
-				<div className="flex items-center gap-2">
-					<Icon icon="healthicons:blood-drop-24px" height={20} width={20} />
-					<p className="font-bold">{appConfig.name}</p>
-				</div>
+				<Link href="/">
+					<div className="flex items-center gap-2">
+						<Icon icon="healthicons:blood-drop-24px" height={20} width={20} />
+						<p className="font-bold">{appConfig.name}</p>
+					</div>
+				</Link>
 			</header>
 			<LoginForm />
 			<div className="grid grid-cols-[1fr_auto_1fr] items-center w-full overflow-hidden">
@@ -29,7 +31,7 @@ export default function LoginPage() {
 						Don't have an account?{" "}
 						<Link href="/sign-up" className="font-medium underline">
 							Sign Up
-						</Link>
+						</Link> 
 					</p>
 					<div className="mt-3">
 						<div className="text-xs inline-block text-center text-pretty text-muted-foreground leading-5 tracking-wide">
