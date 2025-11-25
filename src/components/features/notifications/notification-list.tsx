@@ -5,7 +5,8 @@ const NOTIFICATIONS = [
 	{
 		id: 1,
 		title: "Booking Confirmed",
-		description: "Your booking with John Doe for House Cleaning has been confirmed.",
+		description:
+			"Your booking with John Doe for House Cleaning has been confirmed.",
 		time: "2 mins ago",
 		icon: "fluent:checkmark-circle-24-filled",
 		color: "text-green-600 bg-green-100",
@@ -14,7 +15,8 @@ const NOTIFICATIONS = [
 	{
 		id: 2,
 		title: "New Message",
-		description: "Alice Smith sent you a message regarding your Laundry request.",
+		description:
+			"Alice Smith sent you a message regarding your Laundry request.",
 		time: "1 hour ago",
 		icon: "fluent:chat-24-filled",
 		color: "text-blue-600 bg-blue-100",
@@ -57,15 +59,27 @@ export default function NotificationList() {
 					key={notification.id}
 					className={cn(
 						"flex gap-4 p-4 rounded-2xl border transition-colors",
-						notification.read ? "bg-white border-zinc-100" : "bg-blue-50/50 border-blue-100"
+						notification.read
+							? "bg-white border-zinc-100"
+							: "bg-blue-50/50 border-blue-100",
 					)}
 				>
-					<div className={cn("h-12 w-12 rounded-full flex items-center justify-center shrink-0", notification.color)}>
+					<div
+						className={cn(
+							"h-12 w-12 rounded-full flex items-center justify-center shrink-0",
+							notification.color,
+						)}
+					>
 						<Icon icon={notification.icon} className="h-6 w-6" />
 					</div>
 					<div className="flex-1">
 						<div className="flex justify-between items-start mb-1">
-							<h3 className={cn("font-semibold text-sm", !notification.read && "text-blue-900")}>
+							<h3
+								className={cn(
+									"font-semibold text-sm",
+									!notification.read && "text-blue-900",
+								)}
+							>
 								{notification.title}
 							</h3>
 							<span className="text-xs text-muted-foreground whitespace-nowrap ml-2">

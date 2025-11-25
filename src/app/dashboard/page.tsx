@@ -4,8 +4,8 @@ import Header from "@/components/features/dashboard/header";
 import LiveCard from "@/components/features/dashboard/live-card";
 import SearchBar from "@/components/features/dashboard/search-bar";
 import FeaturedWork from "@/components/features/dashboard/top-rated";
-import BottomNav from "@/components/layout/bottom-nav";
 import { CreateJob } from "@/components/features/jobs/create-job";
+import BottomNav from "@/components/layout/bottom-nav";
 
 export default function Dashboard() {
 	return (

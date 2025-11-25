@@ -1,5 +1,6 @@
 "use client";
 
+import { Plus } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
 	Drawer,
@@ -13,7 +14,6 @@ import {
 } from "@/components/ui/drawer";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Plus } from "lucide-react";
 
 export function CreateJob() {
 	return (
@@ -37,19 +37,31 @@ export function CreateJob() {
 								<Label htmlFor="title" className="text-right">
 									Title
 								</Label>
-								<Input id="title" placeholder="e.g. House Cleaning" className="col-span-3" />
+								<Input
+									id="title"
+									placeholder="e.g. House Cleaning"
+									className="col-span-3"
+								/>
 							</div>
 							<div className="grid grid-cols-4 items-center gap-4">
 								<Label htmlFor="category" className="text-right">
 									Category
 								</Label>
-								<Input id="category" placeholder="e.g. Cleaning" className="col-span-3" />
+								<Input
+									id="category"
+									placeholder="e.g. Cleaning"
+									className="col-span-3"
+								/>
 							</div>
 							<div className="grid grid-cols-4 items-center gap-4">
 								<Label htmlFor="budget" className="text-right">
 									Budget
 								</Label>
-								<Input id="budget" placeholder="e.g. R500" className="col-span-3" />
+								<Input
+									id="budget"
+									placeholder="e.g. R500"
+									className="col-span-3"
+								/>
 							</div>
 						</div>
 					</div>
