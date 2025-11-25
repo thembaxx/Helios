@@ -65,7 +65,10 @@ export default function FeaturedServices() {
 								</p>
 								<div className="flex items-center gap-1 mt-1">
 									<Star className="h-3 w-3 fill-yellow-400 text-yellow-400" />
-									<span className="text-xs font-medium">{item.rating}</span>
+									<span className="text-xs font-medium">{item.rating}/5</span>{" "}
+									<span className="text-xs text-neutral-500">
+										From 51 reviews
+									</span>
 								</div>
 							</div>
 							<div className="bg-black/5 px-2 py-1 rounded-lg">
