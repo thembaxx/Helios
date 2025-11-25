@@ -23,7 +23,7 @@ const NOTIFICATIONS = [
 	{
 		id: 3,
 		title: "Payment Successful",
-		description: "Payment of $50.00 for Plumbing Repair was successful.",
+		description: "Payment of R50.00 for Plumbing Repair was successful.",
 		time: "Yesterday",
 		icon: "fluent:payment-24-filled",
 		color: "text-purple-600 bg-purple-100",

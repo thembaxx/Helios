@@ -7,7 +7,7 @@ const FEATURED = [
 		name: "John Doe",
 		service: "House Cleaning",
 		rating: 4.8,
-		price: "$25/hr",
+		price: "R25/hr",
 		image:
 			"https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
 	},
@@ -16,7 +16,7 @@ const FEATURED = [
 		name: "Alice Smith",
 		service: "Washing Clothes",
 		rating: 4.9,
-		price: "$20/hr",
+		price: "R20/hr",
 		image:
 			"https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
 	},
@@ -25,7 +25,7 @@ const FEATURED = [
 		name: "Robert Johnson",
 		service: "Plumbing Repair",
 		rating: 4.7,
-		price: "$35/hr",
+		price: "R35/hr",
 		image:
 			"https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
 	},
