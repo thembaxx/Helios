@@ -1,4 +1,5 @@
 import { Icon } from "@iconify/react";
+import Image from "next/image";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
 	Carousel,
@@ -7,7 +8,6 @@ import {
 	CarouselNext,
 	CarouselPrevious,
 } from "@/components/ui/carousel";
-import Image from "next/image";
 
 const WorkItem = () => (
 	<div className="p-3 bg-white/60 h-full border border-[#EBEDED] backdrop-blur-[25px]  rounded-[22px] showdow-[rgba(99, 99, 99, 0.2) 0px_2px_8px_0px)]">

@@ -31,7 +31,7 @@ export default function LoginPage() {
 						Don't have an account?{" "}
 						<Link href="/sign-up" className="font-medium underline">
 							Sign Up
-						</Link> 
+						</Link>
 					</p>
 					<div className="mt-3">
 						<div className="text-xs inline-block text-center text-pretty text-muted-foreground leading-5 tracking-wide">

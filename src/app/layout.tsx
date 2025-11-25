@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import appConfig from "@/config/app,config";
-import { fontSans, fontSerif } from "@/config/fonts";
 
 import TopNavbar from "@/components/layout/top-navbar";
+import appConfig from "@/config/app,config";
+import { fontSans, fontSerif } from "@/config/fonts";
 
 export const metadata: Metadata = {
 	title: appConfig.name,
@@ -21,9 +21,7 @@ export default function RootLayout({
 				className={`${fontSans.variable} ${fontSerif.variable} antialiased`}
 			>
 				<TopNavbar />
-				<div className="pt-14 h-screen">
-					{children}
-				</div>
+				<div className="pt-14 h-screen">{children}</div>
 			</body>
 		</html>
 	);

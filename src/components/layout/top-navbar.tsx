@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
-import appConfig from "@/config/app,config";
 import Link from "next/link";
+import appConfig from "@/config/app,config";
 
 export default function TopNavbar() {
 	return (
@@ -9,7 +9,9 @@ export default function TopNavbar() {
 				<div className="bg-black text-white p-1 rounded-lg">
 					<Icon icon="healthicons:blood-drop-24px" className="h-5 w-5" />
 				</div>
-				<span className="font-bold text-lg tracking-tight">{appConfig.name}</span>
+				<span className="font-bold text-lg tracking-tight">
+					{appConfig.name}
+				</span>
 			</Link>
 		</nav>
 	);

@@ -34,7 +34,9 @@ export function MessageBubble({
 				{timestamp && (
 					<span className="text-xs text-muted-foreground">{timestamp}</span>
 				)}
-				{status && <span className="text-xs text-muted-foreground">{status}</span>}
+				{status && (
+					<span className="text-xs text-muted-foreground">{status}</span>
+				)}
 			</div>
 		</div>
 	);

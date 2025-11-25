@@ -7,7 +7,11 @@ import { cn } from "@/lib/utils";
 
 const NAV_ITEMS = [
 	{ name: "Home", icon: "fluent:home-24-filled", path: "/dashboard" },
-	{ name: "Bookings", icon: "fluent:calendar-ltr-24-filled", path: "/bookings" },
+	{
+		name: "Bookings",
+		icon: "fluent:calendar-ltr-24-filled",
+		path: "/bookings",
+	},
 	{ name: "Messages", icon: "fluent:chat-24-filled", path: "/messages" },
 	{ name: "Profile", icon: "fluent:person-24-filled", path: "/profile" },
 ];
@@ -26,7 +30,9 @@ export default function BottomNav() {
 							href={item.path}
 							className={cn(
 								"flex flex-col items-center gap-1 transition-colors",
-								isActive ? "text-black" : "text-muted-foreground hover:text-black/70",
+								isActive
+									? "text-black"
+									: "text-muted-foreground hover:text-black/70",
 							)}
 						>
 							<Icon icon={item.icon} className="h-6 w-6" />
