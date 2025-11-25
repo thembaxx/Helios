@@ -5,6 +5,7 @@ import LiveCard from "@/components/features/dashboard/live-card";
 import SearchBar from "@/components/features/dashboard/search-bar";
 import FeaturedWork from "@/components/features/dashboard/top-rated";
 import BottomNav from "@/components/layout/bottom-nav";
+import { CreateJob } from "@/components/features/jobs/create-job";
 
 export default function Dashboard() {
 	return (
@@ -24,6 +25,7 @@ export default function Dashboard() {
 							<FeaturedWork />
 						</div>
 					</div>
+					<CreateJob />
 					<BottomNav />
 				</div>
 			</div>
