@@ -33,7 +33,7 @@ const LiveCard: React.FC<LiveCardProps> = ({ data }) => {
 						//src="https://api.mapbox.com/styles/v1/mapbox/light-v10/static/-122.4194,37.7749,12,0/600x600?access_token=YOUR_TOKEN_HERE"
 						// Fallback to a generic map-like pattern if you don't have a mapbox token,
 						// or use a solid color/image for the 'exact' look:
-						src="https://geospatialmedia.s3.amazonaws.com/wp-content/uploads/2019/07/Apple-maps-app.png"
+						src="/images/ss3.jpg"
 						className="absolute top-0 left-0 inset-0 h-full w-full object-cover opacity-80 grayscale-[0.3]"
 						alt="Live Map"
 						height={256}
@@ -47,7 +47,7 @@ const LiveCard: React.FC<LiveCardProps> = ({ data }) => {
 
 					{/* Fallback geometric background to mimic the image provided perfectly without an API */}
 					<div
-						className="absolute inset-0 bg-[#e6e6e9]"
+						className="absolute inset-0 bg-[#e6e6e9]/50"
 						style={{
 							backgroundImage: "radial-gradient(#cfcfd1 1px, transparent 1px)",
 							backgroundSize: "20px 20px",
@@ -63,7 +63,7 @@ const LiveCard: React.FC<LiveCardProps> = ({ data }) => {
 						<div className="absolute left-1/2 top-1/2 h-16 w-16 -translate-x-1/2 -translate-y-1/2 rounded-full border border-amber-600/30 bg-amber-600/20 backdrop-blur-sm"></div>
 
 						{/* Center Dot */}
-						<div className="relative flex h-5 w-5 items-center justify-center rounded-full bg-amber-700 shadow-lg ring-2 ring-white">
+						<div className="relative flex h-5 w-5 items-center justify-center rounded-full bg-[#ff6c37] animate-ping shadow-lg ring-2 ring-white">
 							<div className="h-1.5 w-1.5 rounded-full bg-white/80"></div>
 						</div>
 					</div>
