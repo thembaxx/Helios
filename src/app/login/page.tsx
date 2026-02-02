@@ -3,7 +3,7 @@ import Link from "next/link";
 import LoginForm from "@/components/features/auth/login-form";
 import SocialLogin from "@/components/features/auth/social-login";
 import { Separator } from "@/components/ui/separator";
-import appConfig from "@/config/app,config";
+import appConfig from "@/config/app.config";
 
 export default function LoginPage() {
 	return (

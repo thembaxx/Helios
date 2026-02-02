@@ -3,8 +3,8 @@ import BottomNav from "@/components/layout/bottom-nav";
 
 export default function BookingsPage() {
 	return (
-		<div className="min-h-screen bg-zinc-50 dark:bg-black pb-24">
-			<div className="max-w-md mx-auto bg-white dark:bg-zinc-900 min-h-screen shadow-sm flex flex-col">
+		<div className="min-h-screen bg-zinc-50 dark:bg-black pb-24 text-black dark:text-white">
+			<div className="max-w-md mx-auto bg-white dark:bg-zinc-900 min-h-screen shadow-sm flex flex-col relative">
 				<div className="px-6 py-6 border-b">
 					<h1 className="font-bold text-2xl">My Bookings</h1>
 					<p className="text-muted-foreground text-sm mt-1">

@@ -3,7 +3,7 @@ import Link from "next/link";
 import SignUpForm from "@/components/features/auth/sign-up-form";
 import SocialLogin from "@/components/features/auth/social-login";
 import { Separator } from "@/components/ui/separator";
-import appConfig from "@/config/app,config";
+import appConfig from "@/config/app.config";
 
 export default function SignUpPage() {
 	return (

@@ -49,3 +49,58 @@ export const verification = pgTable("verification", {
 	createdAt: timestamp("createdAt"),
 	updatedAt: timestamp("updatedAt"),
 });
+
+export const service = pgTable("service", {
+	id: text("id").primaryKey(),
+	name: text("name").notNull(),
+	description: text("description"),
+	price: text("price").notNull(),
+	providerId: text("providerId")
+		.notNull()
+		.references(() => user.id),
+	image: text("image"),
+	category: text("category").notNull(),
+	rating: text("rating").default("0"),
+	createdAt: timestamp("createdAt").notNull(),
+	updatedAt: timestamp("updatedAt").notNull(),
+});
+
+export const booking = pgTable("booking", {
+	id: text("id").primaryKey(),
+	userId: text("userId")
+		.notNull()
+		.references(() => user.id),
+	serviceId: text("serviceId")
+		.notNull()
+		.references(() => service.id),
+	status: text("status").notNull(), // 'upcoming', 'completed', 'cancelled'
+	date: text("date").notNull(),
+	time: text("time").notNull(),
+	location: text("location").notNull(),
+	price: text("price").notNull(),
+	createdAt: timestamp("createdAt").notNull(),
+	updatedAt: timestamp("updatedAt").notNull(),
+});
+
+export const notification = pgTable("notification", {
+	id: text("id").primaryKey(),
+	userId: text("userId")
+		.notNull()
+		.references(() => user.id),
+	title: text("title").notNull(),
+	message: text("message").notNull(),
+	read: boolean("read").default(false).notNull(),
+	createdAt: timestamp("createdAt").notNull(),
+});
+
+export const message = pgTable("message", {
+	id: text("id").primaryKey(),
+	senderId: text("senderId")
+		.notNull()
+		.references(() => user.id),
+	receiverId: text("receiverId")
+		.notNull()
+		.references(() => user.id),
+	content: text("content").notNull(),
+	createdAt: timestamp("createdAt").notNull(),
+});
