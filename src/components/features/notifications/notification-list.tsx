@@ -9,7 +9,8 @@ const NOTIFICATIONS = [
 			"Your booking with John Doe for House Cleaning has been confirmed.",
 		time: "2 mins ago",
 		icon: "fluent:checkmark-circle-24-filled",
-		color: "text-green-600 bg-green-100 dark:text-green-400 dark:bg-green-900/30",
+		color:
+			"text-green-600 bg-green-100 dark:text-green-400 dark:bg-green-900/30",
 		read: false,
 	},
 	{
@@ -28,7 +29,8 @@ const NOTIFICATIONS = [
 		description: "Payment of R50.00 for Plumbing Repair was successful.",
 		time: "Yesterday",
 		icon: "fluent:payment-24-filled",
-		color: "text-purple-600 bg-purple-100 dark:text-purple-400 dark:bg-purple-900/30",
+		color:
+			"text-purple-600 bg-purple-100 dark:text-purple-400 dark:bg-purple-900/30",
 		read: true,
 	},
 	{
@@ -37,7 +39,8 @@ const NOTIFICATIONS = [
 		description: "Please rate your experience with Robert Johnson.",
 		time: "2 days ago",
 		icon: "fluent:star-24-filled",
-		color: "text-yellow-600 bg-yellow-100 dark:text-yellow-400 dark:bg-yellow-900/30",
+		color:
+			"text-yellow-600 bg-yellow-100 dark:text-yellow-400 dark:bg-yellow-900/30",
 		read: true,
 	},
 	{

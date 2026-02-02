@@ -75,7 +75,9 @@ const LiveCard: React.FC<LiveCardProps> = ({ data: initialData }) => {
 						<span className="font-semibold text-slate-800 dark:text-white text-lg">
 							{data.name}
 						</span>
-						<span className="text-slate-500 dark:text-slate-400 font-medium">is {data.status}</span>
+						<span className="text-slate-500 dark:text-slate-400 font-medium">
+							is {data.status}
+						</span>
 					</div>
 					<div className="rounded-full bg-white/50 dark:bg-slate-800/50 px-3 py-1 text-sm font-bold text-slate-700 dark:text-slate-300 shadow-sm ring-1 ring-black/5">
 						{data.eta}
