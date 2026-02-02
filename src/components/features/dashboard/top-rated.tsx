@@ -10,14 +10,14 @@ import {
 } from "@/components/ui/carousel";
 
 const WorkItem = () => (
-	<div className="p-3 bg-white/60 h-full border border-[#EBEDED] backdrop-blur-[25px]  rounded-[22px] showdow-[rgba(99, 99, 99, 0.2) 0px_2px_8px_0px)]">
-		<div className="w-full aspect-video bg-gray-200 rounded-2xl overflow-hidden">
+	<div className="p-3 bg-white/60 dark:bg-zinc-800/60 h-full border border-[#EBEDED] dark:border-zinc-700 backdrop-blur-[25px] rounded-[22px] shadow-[rgba(99,99,99,0.2)_0px_2px_8px_0px]">
+		<div className="w-full aspect-video bg-gray-200 dark:bg-zinc-700 rounded-2xl overflow-hidden">
 			<Image
 				src="https://images.unsplash.com/photo-1660925472451-b3fbbe05aece?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 				alt=""
 				width={256}
 				height={256}
-				className="object-cover h-full! w-full!"
+				className="object-cover !h-full !w-full"
 			/>
 		</div>
 		<div className="space-y-2">
@@ -76,7 +76,7 @@ function FeaturedWork() {
 					<CarouselItem className="md:basis-1/2 w-full ml-4">
 						<WorkItem />
 					</CarouselItem>
-					<CarouselItem className="md:md:basis-1/2 w-full ml-4">
+					<CarouselItem className="md:basis-1/2 w-full ml-4">
 						<WorkItem />
 					</CarouselItem>
 					<CarouselItem className="md:basis-1/2 w-full ml-4">

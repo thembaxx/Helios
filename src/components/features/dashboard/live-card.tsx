@@ -18,10 +18,10 @@ const LiveCard: React.FC<LiveCardProps> = ({ data: initialData }) => {
 	return (
 		<div className="flex items-center justify-center font-sans">
 			{/* --- Main Card Container (Glassmorphism) --- */}
-			<div className="relative w-full max-w-sm overflow-hidden rounded-4xl border border-white/60 bg-white/40 p-5 shadow-2xl backdrop-blur-xl">
+			<div className="relative w-full max-w-sm overflow-hidden rounded-4xl border border-white/60 bg-white/40 dark:bg-slate-900/40 p-5 shadow-2xl backdrop-blur-xl">
 				{/* Header */}
 				<div className="mb-4 px-1">
-					<h2 className="text-xl font-bold text-slate-800 tracking-tight">
+					<h2 className="text-xl font-bold text-slate-800 dark:text-white tracking-tight">
 						Live Card
 					</h2>
 				</div>
@@ -72,12 +72,14 @@ const LiveCard: React.FC<LiveCardProps> = ({ data: initialData }) => {
 				{/* Footer Info */}
 				<div className="mt-5 flex items-center justify-between px-2">
 					<div className="flex items-center gap-2">
-						<span className="font-semibold text-slate-800 text-lg">
+						<span className="font-semibold text-slate-800 dark:text-white text-lg">
 							{data.name}
 						</span>
-						<span className="text-slate-500 font-medium">is {data.status}</span>
+						<span className="text-slate-500 dark:text-slate-400 font-medium">
+							is {data.status}
+						</span>
 					</div>
-					<div className="rounded-full bg-white/50 px-3 py-1 text-sm font-bold text-slate-700 shadow-sm ring-1 ring-black/5">
+					<div className="rounded-full bg-white/50 dark:bg-slate-800/50 px-3 py-1 text-sm font-bold text-slate-700 dark:text-slate-300 shadow-sm ring-1 ring-black/5">
 						{data.eta}
 					</div>
 				</div>

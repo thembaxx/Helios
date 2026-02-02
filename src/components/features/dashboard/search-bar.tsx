@@ -11,7 +11,7 @@ export default function SearchBar() {
 			<div className="relative flex items-center">
 				<Input
 					placeholder="Search electrician, gardener etc..."
-					className="bg-white/60 backdrop-blur-2xl pl-10 rounded-2xl border border-[#EBEDED] h-12 shadow-none placeholder:text-sm"
+					className="bg-white/60 dark:bg-zinc-800/60 backdrop-blur-2xl pl-12 rounded-2xl border border-[#EBEDED] dark:border-zinc-700 h-12 shadow-none placeholder:text-sm"
 				/>
 				<Button
 					className="rounded-full absolute left-2"

@@ -9,7 +9,8 @@ const NOTIFICATIONS = [
 			"Your booking with John Doe for House Cleaning has been confirmed.",
 		time: "2 mins ago",
 		icon: "fluent:checkmark-circle-24-filled",
-		color: "text-green-600 bg-green-100",
+		color:
+			"text-green-600 bg-green-100 dark:text-green-400 dark:bg-green-900/30",
 		read: false,
 	},
 	{
@@ -19,7 +20,7 @@ const NOTIFICATIONS = [
 			"Alice Smith sent you a message regarding your Laundry request.",
 		time: "1 hour ago",
 		icon: "fluent:chat-24-filled",
-		color: "text-blue-600 bg-blue-100",
+		color: "text-blue-600 bg-blue-100 dark:text-blue-400 dark:bg-blue-900/30",
 		read: false,
 	},
 	{
@@ -28,7 +29,8 @@ const NOTIFICATIONS = [
 		description: "Payment of R50.00 for Plumbing Repair was successful.",
 		time: "Yesterday",
 		icon: "fluent:payment-24-filled",
-		color: "text-purple-600 bg-purple-100",
+		color:
+			"text-purple-600 bg-purple-100 dark:text-purple-400 dark:bg-purple-900/30",
 		read: true,
 	},
 	{
@@ -37,7 +39,8 @@ const NOTIFICATIONS = [
 		description: "Please rate your experience with Robert Johnson.",
 		time: "2 days ago",
 		icon: "fluent:star-24-filled",
-		color: "text-yellow-600 bg-yellow-100",
+		color:
+			"text-yellow-600 bg-yellow-100 dark:text-yellow-400 dark:bg-yellow-900/30",
 		read: true,
 	},
 	{
@@ -46,7 +49,7 @@ const NOTIFICATIONS = [
 		description: "We have updated our terms of service. Please review them.",
 		time: "1 week ago",
 		icon: "fluent:info-24-filled",
-		color: "text-gray-600 bg-gray-100",
+		color: "text-gray-600 bg-gray-100 dark:text-gray-400 dark:bg-gray-800/50",
 		read: true,
 	},
 ];
@@ -60,8 +63,8 @@ export default function NotificationList() {
 					className={cn(
 						"flex gap-4 p-4 rounded-2xl border transition-colors",
 						notification.read
-							? "bg-white border-zinc-100"
-							: "bg-blue-50/50 border-blue-100",
+							? "bg-white dark:bg-zinc-900/50 border-zinc-100 dark:border-zinc-800"
+							: "bg-blue-50/50 dark:bg-blue-900/20 border-blue-100 dark:border-blue-900/50",
 					)}
 				>
 					<div
@@ -77,7 +80,7 @@ export default function NotificationList() {
 							<h3
 								className={cn(
 									"font-semibold text-sm",
-									!notification.read && "text-blue-900",
+									!notification.read && "text-blue-900 dark:text-blue-300",
 								)}
 							>
 								{notification.title}

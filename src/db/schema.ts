@@ -1,4 +1,11 @@
-import { boolean, pgTable, text, timestamp } from "drizzle-orm/pg-core";
+import {
+	boolean,
+	doublePrecision,
+	integer,
+	pgTable,
+	text,
+	timestamp,
+} from "drizzle-orm/pg-core";
 
 export const user = pgTable("user", {
 	id: text("id").primaryKey(),
@@ -54,13 +61,13 @@ export const service = pgTable("service", {
 	id: text("id").primaryKey(),
 	name: text("name").notNull(),
 	description: text("description"),
-	price: text("price").notNull(),
+	price: integer("price").notNull(),
 	providerId: text("providerId")
 		.notNull()
 		.references(() => user.id),
 	image: text("image"),
 	category: text("category").notNull(),
-	rating: text("rating").default("0"),
+	rating: doublePrecision("rating").default(0),
 	createdAt: timestamp("createdAt").notNull(),
 	updatedAt: timestamp("updatedAt").notNull(),
 });
@@ -77,7 +84,7 @@ export const booking = pgTable("booking", {
 	date: text("date").notNull(),
 	time: text("time").notNull(),
 	location: text("location").notNull(),
-	price: text("price").notNull(),
+	price: integer("price").notNull(),
 	createdAt: timestamp("createdAt").notNull(),
 	updatedAt: timestamp("updatedAt").notNull(),
 });
