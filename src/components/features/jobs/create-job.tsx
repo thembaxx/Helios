@@ -19,7 +19,7 @@ export function CreateJob() {
 	return (
 		<Drawer>
 			<DrawerTrigger asChild>
-				<Button className="rounded-full h-14 w-14 shadow-lg bg-black text-white hover:bg-zinc-800 fixed bottom-24 right-6 z-50 flex items-center justify-center">
+				<Button className="rounded-full h-14 w-14 shadow-lg bg-black text-white hover:bg-zinc-800 absolute bottom-24 right-6 z-50 flex items-center justify-center">
 					<Plus className="h-6 w-6" />
 				</Button>
 			</DrawerTrigger>

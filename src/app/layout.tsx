@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import TopNavbar from "@/components/layout/top-navbar";
-import appConfig from "@/config/app,config";
+import appConfig from "@/config/app.config";
 import { fontSans, fontSerif } from "@/config/fonts";
 
 export const metadata: Metadata = {

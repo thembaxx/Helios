@@ -55,7 +55,7 @@ const UserTypeSwitcher = React.forwardRef<
 			<SwitcherItem value="client" label="I'm a client" currentValue={value} />
 			<SwitcherItem
 				value="freelancer"
-				label="I'm a Job seeker"
+				label="I'm a job seeker"
 				currentValue={value}
 			/>
 		</RadioGroupPrimitive.Root>

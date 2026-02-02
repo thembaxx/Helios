@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
 import Link from "next/link";
-import appConfig from "@/config/app,config";
+import appConfig from "@/config/app.config";
 
 export default function TopNavbar() {
 	return (

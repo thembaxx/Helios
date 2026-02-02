@@ -12,8 +12,8 @@ type LiveCardProps = {
 	};
 };
 
-const LiveCard: React.FC<LiveCardProps> = ({ data }) => {
-	data = mockDriver;
+const LiveCard: React.FC<LiveCardProps> = ({ data: initialData }) => {
+	const data = initialData || mockDriver;
 
 	return (
 		<div className="flex items-center justify-center font-sans">

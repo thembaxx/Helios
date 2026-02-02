@@ -7,7 +7,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { UserTypeSwitcher } from "@/components/user-type-switcher";
-import appConfig from "@/config/app,config";
+import appConfig from "@/config/app.config";
 
 function UserTypeSelect() {
 	const router = useRouter();
@@ -40,7 +40,7 @@ function UserTypeSelect() {
 						all in one place.
 					</h1>
 					<p className="text-sm mt-3 text-shadow-black text-pretty">
-						Realible & proffessional services
+						Reliable & professional services
 					</p>
 				</div>
 			</div>

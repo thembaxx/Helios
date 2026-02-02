@@ -63,9 +63,9 @@ export default function ChatInterface() {
 	};
 
 	return (
-		<div className="flex flex-col h-full bg-white max-w-md mx-auto shadow-2xl overflow-hidden relative">
+		<div className="flex flex-col h-full bg-white overflow-hidden relative">
 			{/* Header */}
-			<header className="flex items-center justify-between px-4 py-3 border-b bg-white z-10">
+			<header className="flex items-center justify-between px-4 py-3 border-b bg-white z-10 pt-8 sm:pt-4">
 				<div className="flex items-center">
 					<h1 className="font-bold text-lg">Support</h1>
 				</div>
